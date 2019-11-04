@@ -13,6 +13,7 @@ class QuestionsTest < ApplicationSystemTestCase
     fill_in "question", with: "Hello"
     click_on "Ask"
 
+    take_screenshot
     assert_text "I don't care, get dressed and go to work!"
   end
 
@@ -21,6 +22,7 @@ class QuestionsTest < ApplicationSystemTestCase
     fill_in "question", with: "i am going to work"
     click_on "Ask"
 
+    take_screenshot
     assert_text "Great!"
   end
 end
