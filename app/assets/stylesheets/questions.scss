@@ -1,32 +1,6 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-body {
-  background-color: #ecfcff;
-}
-
-.card {
-  display: inline-block;
-  background-color: #f9ed69;
-  padding: 8px 16px;
-  margin: 10px 50px;
-  border-radius: 4px;
-  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, .2);
-}
-
-.card:hover {
-  background-color: #f08a5d;
-  cursor: pointer;
-}
-
-.person {
-  font-style: italic;
-}
-
-.message {
-  font-weight: bold;
-}
-
 form {
   text-align: center;
   margin-top: 50px;
@@ -47,4 +21,27 @@ form {
 .btn-ask a{
   color: white;
   text-decoration: none;
+}
+
+ /* Chat containers */
+.card {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Darker chat container */
+.sender {
+  border-color: #ccc;
+  background-color: #ddd;
+  text-align: right;
+}
+
+/* Clear floats */
+.card::after {
+  content: "";
+  clear: both;
+  display: table;
 }
